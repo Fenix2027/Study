@@ -4,6 +4,24 @@
  * Результат сохраните в переменной grade.
  */
 
-const score = 70 // тестовое значение, можно изменять
-let grade
+const score = 70 ;// тестовое значение, можно изменять
+let grade = 0;
+switch (true) {
+    case score < 50 :
+        grade = 'F';
+        break;
+    case score < 70 :
+        grade = 'D';
+        break;
+    case score < 80 :
+        grade = 'C';
+        break;
+    case score < 90 :
+        grade = 'B';
+        break;       
+    default:
+        grade = 'A';
+        break;
+        
+}
 // your code
