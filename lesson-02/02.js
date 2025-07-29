@@ -20,3 +20,4 @@ if (isWinningDouble) {
   console.log('Не выигрышный дубль.')
 }
 */
+
