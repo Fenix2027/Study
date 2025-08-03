@@ -2,7 +2,7 @@
 // Функция должна возвращать true, если число чётное, и false — в противном случае
 
 function isEven(x) {
-    return x % 2 === 0;
+    return x % 2 == 0;
 };
 
-console.log(isEven(2));
+
