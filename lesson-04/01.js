@@ -17,7 +17,7 @@ function includesElement(array,element) {
     for (i = 0; i < array.length; i++) {
         if (element === array[i]) {
             return true;
-        };else {
+        } else {
             return false;
         }
         
