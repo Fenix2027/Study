@@ -14,5 +14,10 @@
 
 Подсказка: можно использовать функцию `includesElement`, которую мы написали ранее. Переписывать её не нужно, она доступна по всему проекту за счёт hoisting.
 */
-
-function findUniqueElements() {}
+function includesElement(value, index, array) {
+  return array.indexOf(value) === index;
+}
+// usage example:
+var a = ['a', 1, 'a', 2, '1'];
+var unique = a.filter(includesElement);
+console.log(unique);
