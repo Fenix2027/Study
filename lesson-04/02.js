@@ -14,10 +14,12 @@
 
 Подсказка: можно использовать функцию `includesElement`, которую мы написали ранее. Переписывать её не нужно, она доступна по всему проекту за счёт hoisting.
 */
-function includesElement(value, index, array) {
-  return array.indexOf(value) === index;
-}
-// usage example:
-var a = ['a', 1, 'a', 2, '1'];
-var unique = a.filter(includesElement);
-console.log(unique);
+function findUniqueElements(array) {
+     const uniqueElements = [];
+      for (let i = 0; i < array.length; i++) {
+         if (!uniqueElements.includes(array[i])) {
+             uniqueElements.push(array[i]);
+     } 
+    } return uniqueElements;
+ } 
+ console.log(findUniqueElements([1,2,2,5,4,7,5]))
