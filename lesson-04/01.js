@@ -15,10 +15,13 @@ includesElement([1, 2, 3], 2)  // должен вернуть `true`.
 
 
 
-function includesElement(value, index, array) {
-  return array.indexOf(value) === index;
+function includesElement(array,element) {
+  for (let index = 0; index < array.length; index++) {
+    if (array.includes(element)) {
+      return true
+    }
+    
+  }
+  
 }
-// usage example:
-var a = ['a', 1, 'a', 2, '1'];
-var unique = a.filter(includesElement);
-console.log(unique);
+console.log(includesElement([1,3],3))
