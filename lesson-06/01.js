@@ -36,7 +36,7 @@ function doubledNumbers(array,callback)  {
       
 return variable ;
 }
-const filter = doubledNumbers([1,2,4,8,3,3,7],(element) => element)
+const filter = doubledNumbers(array,(element) => element)
     
   
   
