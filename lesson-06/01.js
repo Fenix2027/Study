@@ -24,25 +24,22 @@ console.log(oddNumbers) // Должен вывести: [1, 3, 5]
 */
 
 
-
-
-
 function doubledNumbers(array,callback)  {
   const variable = [];
   for (let index = 0; index < array.length; index++) {
       const element = array[index];
+       if (element % 2 !== 0) {
+         variable.push(callback(element,index));
+       }
        
-        variable.push(callback(array[index]))
   }
       
 return variable ;
 }
-const filter = doubledNumbers([1,2,5,7,3,3,7],(element, index) => {
-  if (element % 2 !== 0) {
-    return 
-  }
+const filter = doubledNumbers([1,2,4,8,3,3,7],(element) => element)
+    
   
-})
+  
 ;
 console.log(filter);
 
