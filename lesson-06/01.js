@@ -24,7 +24,7 @@ console.log(oddNumbers) // Должен вывести: [1, 3, 5]
 */
 
 
-function doubledNumbers(array,callback)  {
+function filter(array,callback)  {
   const variable = [];
   for (let index = 0; index < array.length; index++) {
       const element = array[index];
@@ -36,7 +36,7 @@ function doubledNumbers(array,callback)  {
       
 return variable ;
 }
-const filter = doubledNumbers(array,(element) => element)
+
     
   
   
